@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Saira", sans-serif;
+}
+body{
+    background: linear-gradient(135deg, #e6b6eb 0%, #9fd6e4 100%);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+nav>ul{
+    display: flex;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+nav>ul>li{
+    padding:  15px 30px;
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    left: -5px;
+    visibility: hidden;
+    background-color: rgba(80, 149, 214, 0.699);
+    transform:translateY(15px);
+    border-radius: 7px ;
+    width: 250px;
+    box-shadow:  0 5px 20px black;
+}
+.dropdown li p{
+    padding: 8px 5px;
+}
+.dropdown li:hover{
+    background: linear-gradient(135deg, #4657a3 0%, #7e3ac2 100%);
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.616);
+    border-radius:  6px;
+}
+nav>ul>li:hover .dropdown{
+    visibility:visible;
+}
+nav>ul>li:hover{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+    font-weight: 600;
+}
+text{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:900;
+    letter-spacing: 5px;
+}
+
+.logo{
+    height: 55px;
+    width: 110px;
+    margin-right: 100px;
+}
+.content{
+    height: 40vw;
+    width: 95vw;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #798eec 0%, #b37beb 100%);
+    background-image: url(tech.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+h2{
+    color: white;
+    font-weight: 600;
+}
+h1{
+    color:#8b1313 ;
+    font-size: 50px;
+    font-weight: 700;
+}
+.contact h2{
+    color: black;
+    margin:20px;
+    text-align: center;
+}
+.contact form {
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    padding: 15px;
+    border: 1px solid #726b6b;
+    border-radius: 5px;
+    font-size: large;
+}
+.buttons{
+    height: 10vw;
+    width: 95vw;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 3vw;
+    background: linear-gradient(135deg, #798eec 0%, #b37beb 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12vw;
+}
+.buttons .bt{
+    padding: 12px;
+    /* height: 10; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bt a{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.buttons .bt:hover{
+    background: linear-gradient(135deg, #50dfe9 0%, #984de4 100%);
+    font-size: small;
+    box-shadow: 0 2px 5px black;
+}
+.info{
+    width: 90vw;
+    margin: auto;
+    margin-top: 30px;
+    text-align: justify;
+}
+#about h2 , #plans h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+}
+
+
+/* ======================================================= */
+
+
+.container-box{
+    height: auto;
+    width: 95vw;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+.blocks{
+    margin: 10px;
+    height: 600px;
+    min-width:100px ;
+    max-width: 300px;
+    border: 1px solid black;
+    flex-basis: 100%;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #00eee2, #ff018d);
+    box-shadow: 0 15px 30px rgb(0, 0, 0);
+}
+.plan{
+    margin-top: 30px ;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.blocks ul{
+    font-size: small;
+}
+button{
+    padding: 10px;
+    border:2px solid white;
+    background-color: #ffffff00;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 140px;
+    margin :0 auto;
+    margin-top: 150px;
+    transition:all  1.2s ;
+    font-family: "Trade Winds", system-ui;
+}
+.blocks li{
+    margin: 30px;
+    font-family: "Trade Winds", system-ui;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgb(3, 1, 1);
+} 
+.blocks:hover{
+    background-color: #000;
+    transition: .3s;
+    transform: scale(1.05);
+    box-shadow: 0 1px 15px rgb(247, 247, 247);
+}
+.submit{
+    background-color: salmon;
+    width: 220px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+/* =============================== */
+@media (max-width:600px){
+    nav>ul>li{
+        padding:  15px;
+    }
+    #left_push{
+        position: absolute;
+        left: -160px;
+    }
+    .logo{
+        margin-right: 25px;
+    }
+    h2{
+        color: white;
+        font-weight: 400;
+    }
+    h1{
+        color:#8b1313 ;
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+@media (min-width:600px) and (max-width:700px){
+    .logo{
+        margin-right: 35px;
+    }
+    h2{
+        color: white;
+        font-weight: 500;
+    }
+    h1{
+        color:#8b1313 ;
+        font-size: 35px;
+        font-weight: 700;
+    }
+}
+@media(max-width:800px){
+    .container-box{
+        height: auto;
+        width: 95vw;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .blocks{
+        margin: 20px;
+        height: auto;
+        width: 250px;
+    }
+    button{
+        padding: 10px;
+        border:2px solid white;
+        background-color: #ffffff00;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 140px;
+        margin :0 auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        transition:all  1.2s ;
+        font-family: "Trade Winds", system-ui;
+    }
+
+
+}
